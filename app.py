@@ -1,7 +1,5 @@
 
 
-
-
 verb1 = ""
 verb2 = ""
 noun = ""
@@ -13,7 +11,6 @@ verb2 = input("Enter your second verb: ")
 noun = input("Enter your first noun: ")
 celebrity_guest = input("Enter the name of a celebrity: ")
 
-# Error handling for the positive integer input
 while True:
     try:
         number = int(input("Enter a positive integer: "))
@@ -24,10 +21,15 @@ while True:
     except ValueError:
         print("That's not a valid number you noob, re-enter a POSITIVE INTEGER")
 
-madlib = (f"Once upon a time, there was a person named {celebrity_guest}.\n"
-          f"This person decided to {verb1} a {noun}.\n"
-          f"Because of this, they also decided to {verb2} until it turned dark.\n"
-          f"Because of the person's actions, they gained {number} coins.")
+madlib = (f"Once upon a time, there was a person named {celebrity_guest}."
+          f"This person decided to {verb1} a {noun}."
+          f"Because of this, they also decided to {verb2} until it turned dark."
+          f"The summary of the person's actions resulted in the gaining of {number} coins.")
 
 
 print(madlib)
+
+
+
+
+
